@@ -17,4 +17,5 @@ def test_login_loader(page: Page):
     locator = page.get_by_test_id("login-error-inline")
     text = locator.inner_text()
     assert text == 'Invalid login or password.', \
-        'Сообщение "Invalid login or password." не отображетсяя'
+        ('Сообщение "Invalid login or password." не отображетсяя.'
+         'Результат:', text)
